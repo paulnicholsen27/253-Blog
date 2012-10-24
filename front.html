@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title> Twenty7 </title>
+		<link rel="stylesheet" type = "text/css" href = "/stylesheets/">
+	</head>
+
+	<body>
+	{% for entry in blog %}
+		<div class = "entry">
+			<div class = "entry_title">{{entry.title}}
+			<div class = "entry_body">{{entry.body}}
+		</div>
+	{% endfor %}
+	</body>
+</html>
